@@ -3,7 +3,6 @@
 [![React 19](https://img.shields.io/badge/React-19-blue.svg?logo=react)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-8.0-646CFF.svg?logo=vite)](https://vitejs.dev/)
 [![Tailwind CSS 4](https://img.shields.io/badge/Tailwind--CSS-4.0-38B2AC.svg?logo=tailwind-css)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 **SvgFlow** is a high-performance, AI-powered playground and production studio for SVG animations. It bridges the gap between static vector illustrations and production-ready motion code. Whether you need CSS Keyframes, Tailwind classes, Framer Motion variants, or GSAP timelines, SvgFlow handles the heavy lifting so you can focus on the art.
 
