@@ -56,11 +56,11 @@ Respond ONLY with valid JSON. No markdown, no code fences.`;
 // ─── Config ───────────────────────────────────────────────────────────────────
 
 export function getActiveAiConfig() {
-  const provider = localStorage.getItem(STORAGE_KEYS.activeAiProvider) || 'openai';
+  const provider = localStorage.getItem(STORAGE_KEYS.activeAiProvider) || 'groq';
   const keys = {
     openai: localStorage.getItem(STORAGE_KEYS.openaiKey) || '',
     anthropic: localStorage.getItem(STORAGE_KEYS.anthropicKey) || '',
-    groq: localStorage.getItem(STORAGE_KEYS.groqKey) || '',
+    groq: localStorage.getItem(STORAGE_KEYS.groqKey) || import.meta.env.VITE_GROQ_API_KEY || '',
   };
   return { provider, apiKey: keys[provider] };
 }
