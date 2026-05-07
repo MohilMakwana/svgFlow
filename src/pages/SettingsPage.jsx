@@ -14,7 +14,7 @@ export default function SettingsPage() {
   const dispatch = useAppDispatch();
   const theme = useAppSelector((s) => s.ui.theme);
 
-  const [provider, setProvider] = useState(() => localStorage.getItem(STORAGE_KEYS.activeAiProvider) || 'openai');
+  const [provider, setProvider] = useState(() => localStorage.getItem(STORAGE_KEYS.activeAiProvider) || 'groq');
   const [keys, setKeys] = useState(() => ({
     openai: localStorage.getItem(STORAGE_KEYS.openaiKey) || '',
     anthropic: localStorage.getItem(STORAGE_KEYS.anthropicKey) || '',
